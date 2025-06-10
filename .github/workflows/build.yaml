@@ -44,7 +44,7 @@ jobs:
     - name: Run tests
       run: dotnet test $env:SLN_PATH -c Release
 
-    - name: Build and pack Release (WPF)
+    - name: Build and pack Release
       run: |
         dotnet pack $env:SLN_PATH --output $env:PUBLISH_PATH -c Release
 
