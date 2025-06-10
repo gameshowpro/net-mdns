@@ -3,7 +3,7 @@
   <PropertyGroup>
 	<TargetFrameworks>net8.0; net9.0;</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyName>Makaretu.Dns.Multicast.New</AssemblyName>
+    <AssemblyName>Makaretu.Dns.Multicast.Gsp</AssemblyName>
     <RootNamespace>Makaretu.Dns</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
     <DebugType>full</DebugType>
@@ -14,7 +14,7 @@
 	<LangVersion>latest</LangVersion>
     
     <!-- Nuget specs -->
-    <PackageId>Makaretu.Dns.Multicast.New</PackageId>
+    <PackageId>Makaretu.Dns.Multicast.Gsp</PackageId>
     <Authors>Richard Schneider, jdomnitz</Authors>
     <Title>Multicast DNS</Title>
     <Description>A simple Multicast Domain Name Service based on RFC 6762.  Can be used as both a client (sending queries) or a server (responding to queries).</Description>
