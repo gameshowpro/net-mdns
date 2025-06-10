@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<TargetFrameworks>net8.0; net9.0; net462; net481; netstandard2.0</TargetFrameworks>
+	<TargetFrameworks>net8.0; net9.0;</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>Makaretu.Dns.Multicast.New</AssemblyName>
     <RootNamespace>Makaretu.Dns</RootNamespace>
@@ -28,17 +28,16 @@
 	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net8.0'">
-    <IsTrimmable>True</IsTrimmable>
-    <IsAotCompatible>True</IsAotCompatible>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net9.0'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)'=='Release|net8.0' OR $(Configuration)|$(TargetFramework)'=='Release|net9.0'">
     <IsTrimmable>True</IsTrimmable>
     <IsAotCompatible>True</IsAotCompatible>
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
     <PackageReference Include="Common.Logging" Version="3.4.1" />
     <PackageReference Include="Makaretu.Dns.New" Version="3.1.2" />
 	<None Include="..\README.md" Pack="true" PackagePath="\" />
