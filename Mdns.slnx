@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".circleci/config.yml" />
+    <File Path=".gitignore" />
+    <File Path=".travis.yml" />
+    <File Path="appveyor.yml" />
+    <File Path="LICENSE" />
+    <File Path="mung.cmd" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Browser/Browser.csproj" />
+  <Project Path="doc/Documentation.csproj">
+    <Build Project="false" />
+  </Project>
+  <Project Path="Spike/Spike.csproj" />
+  <Project Path="src/Mdns.csproj" />
+  <Project Path="test/MdnsTests.csproj" />
+  <Project Path="traffic/traffic.csproj" />
+</Solution>
